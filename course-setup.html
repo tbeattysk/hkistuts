@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HKIS Schoology Tutorials</title>
+    <link href="stylesheets/hint.min.css" rel="stylesheet">
+    <link href="stylesheets/flexboxgrid.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- http://flexboxgrid.com/ and http://kushagragour.in/lab/hint/-->
+  </head>
+  <body>
+  	<div style="max-width:600px">
+  	<h1>Course Setup</h1>
+  	<span><a href="index.html">All Tutorials</a></span>
+    <div class="overview">
+    	<h3>What you will learn:</h3>
+    	<ul>
+    		
+    		<li ><a href="#linkingCourse">
+    			<span class="hint--right hint--warning" aria-label="
+    			Add materials once for all section.">Linking course sections</span>
+    		</a></li>
+    		<li><a href="#folderStructure">Building a folder structure</a></li>
+    		<li><a href="#courseContent">Importing course content</a></li>
+    		<li><a href="#gradebookSetup">Setting up the gradebook</a></li>
+    		<li><a href="#enabelingAlerts">Enabeling alerts</a></li>
+            <li><a href="#messaging">Messaging Parents and Students</a></li>
+    	</ul>
+    </div>
+    <div class="relatedContent"></div
+    >
+    <div class="videoSection"></div> 
+    <section>
+    	<h2 id="linkingCourse">Linking course sections</h2>
+    	<p>Before we begin, you will want to link the concurrent sections of your courses together. This will save some headache when setting up your grade book, it will also allow for shortcuts when you are doing your grading.</p>
+    	<ul>
+    		<li>Detailed Instructions <a href="https://www.schoology.com/blog/your-new-superpower-manage-multiple-course-sections-at-once">link</a></li>
+    	
+    		<li>Video Instructions <a onclick="toggle_visibility('linkingVid')">show</a></li>
+    		<div style="display:none" id="linkingVid"><iframe width="560" height="315" src="https://www.youtube.com/embed/e_DWSFn9_KM?rel=0" frameborder="0" allowfullscreen></iframe></div>
+    	</ul>
+    	<p> From the <code>Course</code> tab, go to <code>See All</code>. Click on the settings symbol (<img src="res/gear.png">) for the course section want to be linked. Then, choose the other sections to be linked.</p>
+    	<p><img src="res/Linking_Existing_Sections.png" style="border:1px solid black"></p>
+
+    	<aside class="hint red">
+    		<div class="top"><span>Caution</span></div>
+    		<p>Only link sections at the beginning of the year. When sections are linked, data from one of the sections will be lost. Never unlink sections mid-year, as gradebook data will be lost for the linked section.</p>
+    	</aside>
+
+    	<p> Once linked, materials added to the course will be added to all sections. There are options to make section specific material.</p>
+    	<P>Linking Sections FAQs <a onclick="toggle_visibility('linkingFaq')">show</a> 
+    	<ul id="linkingFaq" style="display:none">
+        	<li>Can I still hide materials for one section?
+            <p> Yes, assignments, tests and discussions will initially be shared to all linked sections with the same due dates. You can specify the visibility for each section when you make it or anytime after.</p>
+            </li>
+
+        	<li>Can I asign different due dates for each section?</li>
+            <p> Like the visibility of a resource, the due date is initially set for all section, but it is easy to differentiate between courses.</p>
+        	<li>How do I access the gradebooks for each section?</li>
+            <p> In the gradebook, there is a selector to switch between linked sections </p>
+    	</ul>
+    	</P>
+    </section>
+
+    <section id="folderStructure">
+    	<h2>Building a folder structure</h2>
+    	<p><strong>You may want to organize a previous years content, then move it to your new course </strong> A well organized materials section for your course will help students to navigate the course content. You may want to organize a past course material and then <a href="#courseContent">import it into your new course</a>.</p>
+
+    	<aside class="hint blue">
+    		<div class="top"><span>Standard Expectation</span></div>
+    		<p>All courses must have a <strong>Course Outline</strong> at the top of its materials. The goal of this is to help orientate parents to your course.</p>
+		</aside>
+		<aside class="hint">
+    		<div class="top"><span>Best Practice</span></div>
+		<p>Although different classes will understanbly have different folder structures, this document should be considered the best practice.<br>
+		***Image of a standard folder stucture***
+		    <ul>
+			    <li>--- Course Outline ---</li>
+			    <li>--- Unit 1: Title ---</li>
+				    <ul>
+				    	<li>--- Resources ---</li>
+				    	<li>--- Extensions ---</li>
+				    	<li>--- Review ---</li>
+			    	</ul>
+			    <li>--- Unit 2: Title ---</li>
+			    <li>--- Unit 3: Title ---</li>
+			    <li>--- Unit 4: Title ---</li>
+			    <li>--- Assessments ---</li>
+	    		<li>--- Homework Assignments---</li>
+	    	</ul>
+	    	*** ---------------------------- ***
+	    </p>
+
+	    <p> *** Image of Assessments folder *** <br>
+	    	You may choose to place your assessments within the designated unit or accumulate them within on folder. The placement of your assessments will have no effect on how students and parents see their grade book (see gradebook settings)</p>
+
+    	    <p> *** Image of Homewok Assignments Folder ***<br>
+    	    Homework assignments help students track their daily work. These assignments can build up quickly and usually don't need to have a lot of content in them. Any time something needs to be submitted, or refered to later, it is a better practice to make these resources within a different folder that would be easier to find.</p>
+	    </aside> 
+	</section>
+	<sections id="courseContent">
+    	<h2>Importing course content</h2>
+    	
+    	<p>At the beginning of the year you will probably want to import materials from a previous years course or from your personal or group resourses. You can hide content in two different ways to progressively publish it throughout the year.</p>
+
+    	<ul>
+	    	<li><a onclick="toggle_visibility('importVid')"> Video Instructions</a></li>
+	    		<div style="display:none" id="importVid"><iframe width="420" height="315" src="https://www.youtube.com/embed/-cvAdxSqLR4" frameborder="0" allowfullscreen></iframe></div>
+	    	<li><a onclick="toggle_visibility('hideMaterial')"> Two different ways to hide materials</a></li>
+	    	<ul id="hideMaterial" style="display:none">
+	    		<li>These two methods will help you to keep all the materials you will need for you course in the course, without students or parents being able to see them. You must do this every year to start the course. You may choose to do one method or a combination of both.</li>
+	    		<li><h5>Hide material using an archive folder:</h5>
+	    			<p>This method will create a folder that students cannot see to hide future material. This will be less work at the beginning of the year but more work throughout the year.</p>
+	    		</li>
+	    		<li><h5>Using bulk edit to hide individual material:</h5>
+	    			<p>This method will hide individual materials within your desired folder structure. This will take more work at the start of the year, but less work throughout the year. You will need to do this at the start of every year.</p>
+	    		</li>
+	    	</ul>
+    	</ul>
+    	<p> Access your archieved courses from <code>See All</code> under the <code>Course</code>. When you look under the archieved tab, you can access all the content from past courses.<br>
+    	**** Add gif of archieved view and exporting content.***<br>
+    	From within your archieved course you can copy materials to your current courses. To bulk export content you will need put all the content into one folder and copy the folder to the new course, personal resources or your group.
+
+    </sections>
+    <section id="gradebookSetup">
+		<h2>Setting up the gradebook</h2>
+    	Your will need to setup and familiarize yourself with the gardebook folder before starting your year.
+    	<img src="res/GradeBookSetup.jpg">
+    	<h4> Categories</h4>
+    	<p>This is where you can add, remove and rearrange different grading categories. Changes here will reflect how students and parents see their grades.</p>
+    	<aside class="hint blue">
+    		<div class="top"><span>Standard Expectation</span></div>
+    		<p>All courses need to have a "Summative" category listed first and a "Formative" category listed second. If your formative folder becomes very large, you may consider creating a category for each semester.</p>
+		</aside>
+    	<h4>Grade Scales</h4>
+    	<p> There are three pre-made scales for middle school, you will use in the gradebook system.
+    	<ul>
+    		<li>MS Gradebook Scale (Percent)
+    			<div>This scale is used for gradebook items that don't use rubrics. Using this scale for assignments ***link to assignment tutorial*** will show students and parents the level (DE,AE,ME) instead of the number score.</div>
+    		</li>
+    		<li>MS Rubric Scale (Point)
+    			<div>This scale has 3 points for DE, AE and ME. It should be used within rubrics only.</div></li>
+    		<li>MS Approaches to Learning (Percent)
+    			<div>This scale </div></li>
+    	</ul>
+
+    	<h4>Other settings</h4>
+        <p> The other options available are for grading periods (these are set for us) and final grades. Final grades should be set to hidden *** add phot ***
+   	</sections>
+    <section id="enabelingAlerts">
+    	<h2>Enabeling alerts</h2>
+    	<p>Email alerts can be very useful but also annoying, below are some suggestions when setting up alerts.</p>
+    	<h4>Courses</h4>
+        <ul>
+            <li>Alerts to activate:</li>
+            <ul>
+                <li>Comments: These will inform you if students have made comments on content you have posted. For example if a student has a question about a homework assignments, they could comment directly in schoology and you would be informed.</li>
+            </ul>
+            <li>Alerts to disable:</li>
+            <ul>
+                <li>Submissions: Unless you want to be emailed everytime a student submits their work, this should be disabled. A better summary of submissions are on your homepage under recent activity ***check this***</li>
+            </ul>
+        </ul>
+    	<h4>Groups (curricular teams)</h4>
+        <ul>
+        <p>Most items can be activated depending on how your team uses it, some important ones are:</p>
+            <li>Alerts to activate:</li>
+            <ul>
+                <li>
+                When resources are added: You probably want to be informed when a peer adds a something like a quiz or an assignment. With this turned on there isn't any need for them to post an update or send an email.</li>
+            </ul>
+        </ul>
+        <h4>Groups (school wide)</h4>
+        <ul>
+            <li>Alerts to activate:</li>
+            <ul>
+                <li>
+                For new updates: You will want to receive an email whenever administration posts an update.</li>
+            </ul>
+        </ul>
+    </section>
+    <section id="messaging">
+        <h2>Messaging Parents and Student</h2>
+        <p>To quickly message groups of students or parents, Schoology is the best fastest option. When they recieve an email through Schoology they can reply directly to the email to reply.</p>
+    </div>
+    <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+	//-->
+	</script>
+    <footer>
+        <--- Back to index ------ 2. Collecting student work --->
+    </footer>
+  </body>
+
+</html>

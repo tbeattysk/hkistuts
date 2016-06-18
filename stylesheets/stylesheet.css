@@ -13,6 +13,12 @@ img{
   max-width: 100%;
   vertical-align: middle;
 }
+a{
+  cursor: pointer;
+}
+code{
+  background-color: #abb;
+}
 
 aside.hint {
   max-width:700px;
