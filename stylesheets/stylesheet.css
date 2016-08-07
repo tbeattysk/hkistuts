@@ -19,7 +19,22 @@ a{
 code{
   background-color: #abb;
 }
-
+div.box{
+  text-align: center;
+  padding-top: 30px
+}
+div.box > img{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.box > h3{
+  margin-bottom: 0;
+}
+div.box > ol{
+  display:inline-block;
+  text-align:left;
+}
 aside.hint {
   max-width:700px;
   align-self: center;
