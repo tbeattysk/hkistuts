@@ -18,7 +18,7 @@
     <div class="overview">
     	<h3>What you will learn:</h3>
     	<ol>
-    		<li ><a href="#linkingCourse">Linking course sections</a></li>
+    		<li ><a onclick="jumpto('linkingCourse')">Linking course sections</a></li>
     		<li><a href="#folderStructure">Building a folder structure</a></li>
     		<li><a href="#courseContent">Importing course content</a></li>
     		<li><a href="#enabelingAlerts">Enabeling alerts</a></li>
@@ -31,7 +31,7 @@
     	<h2>1. Linking course sections</h2>
     	<p>Before we begin, you will want to link the concurrent sections of your courses together. This will save some headache when setting up your grade book, it will also allow for shortcuts when you are doing your grading.</p>
     	<ul>
-    		<li>Detailed Instructions <a href="https://www.schoology.com/blog/your-new-superpower-manage-multiple-course-sections-at-once">link</a></li>
+    		<li>Detailed Instructions <a href="https://www.schoology.com/blog/your-new-superpower-manage-multiple-course-sections-at-once" target="_blank">link</a></li>
     	
     		<li>Video Instructions <a onclick="toggle_visibility('linkingVid')">show</a></li>
     		<div style="display:none" id="linkingVid"><iframe width="560" height="315" src="https://www.youtube.com/embed/e_DWSFn9_KM?rel=0" frameborder="0" allowfullscreen></iframe></div>
@@ -161,6 +161,9 @@
             e.style.display = 'block';
             s.innerHTML='hide';
         }
+    }
+    function jumpto(anchor){
+        window.location.href = "#"+anchor;
     }
 	</script>
 
