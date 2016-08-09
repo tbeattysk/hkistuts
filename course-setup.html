@@ -21,7 +21,7 @@
     		<li ><a onclick="jumpto('linkingCourse')">Linking course sections</a></li>
     		<li><a onclick="jumpto('folderStructure')">Building a folder structure</a></li>
     		<li><a href="#courseContent">Importing course content</a></li>
-    		<li><a href="#enabelingAlerts">Enabeling alerts</a></li>
+    		<li><a href="#enabelingAlerts">Enabling alerts</a></li>
             <li><a href="#messaging">Messaging Parents and Students</a></li>
     	</ol>
     </div>
@@ -29,7 +29,7 @@
     <div class="videoSection"></div> 
     <section id="linkingCourse">
     	<h2>1. Linking course sections</h2>
-    	<p>Before we begin, you will want to link the concurrent sections of your courses together. This will save some headache when setting up your grade book, it will also allow for shortcuts when you are doing your grading.</p>
+    	<p>Before beginning the year, you will want to link the concurrent sections of your courses together. This will save some headache when setting up your grade book, it will also allow for shortcuts when you are posting content and entering grades.</p>
     	<ul>
     		<li>Detailed Instructions <a href="https://www.schoology.com/blog/your-new-superpower-manage-multiple-course-sections-at-once" target="_blank">link</a></li>
     	
@@ -41,7 +41,7 @@
 
     	<aside class="hint red">
     		<div class="top"><span>Caution</span></div>
-    		<p>Only link sections at the beginning of the year. When sections are linked, data from one of the sections will be lost. Never unlink sections mid-year, as gradebook data will be lost for the linked section.</p>
+    		<p>Only linked sections at the beginning of the year. When sections are linked, data from one of the sections will be lost. Never unlink sections mid-year, as gradebook data will be lost for the linked section.</p>
     	</aside>
 
     	<p> Once linked, materials added to the course will be added to all sections. There are options to make section specific material.</p>
@@ -70,7 +70,7 @@
 		
 		<aside class="hint">
     		<div class="top"><span>Best Practice</span></div>
-		<p>Although different classes will understandably have different folder structures, this should be considered the common usage with.</p>
+		<p>Although different classes will understandably have different folder structures, this should be considered the best practice.</p>
 		<p><img src="res/folder_structure.png" style="border:1px solid black"></p>
         
         <ul>
@@ -92,7 +92,7 @@
 	    	<li>Importing Content Instructions <a onclick="toggle_visibility('importVid',this)">show</a></li>
 	    		<div style="display:none" id="importVid">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/-cvAdxSqLR4" frameborder="0" allowfullscreen></iframe>
-                    <p> Access your archived courses from <code>See All</code> under the <code>Course</code>. When you look under the archieved tab, you can access all the content from past courses.</p>
+                    <p> Access your archived courses from <code>See All</code> under the <code>Course</code>. When you look under the archived tab, you can access all the content from past courses.</p>
                     
                     <p>From within your archived course you can copy materials to your current courses.</p>
                 </div>
@@ -106,6 +106,20 @@
                     <li>The individual items can then be published as needed.</li>
                 </ol>
 	    	</div>
+            <li>Advanced Course Importing Using Collections <a onclick="toggle_visibility('advanced',this)">show</a></li>
+            <div id="advanced" style="display:none">
+                <p>Making a Collection:</p>
+                <iframe width="560" height="315" src="https://player.vimeo.com/video/166244668?color=ffffff&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p>Retrieving a Collection:</p>
+                <iframe width="560" height="315" src="https://player.vimeo.com/video/166394702?color=ffffff&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                <p>Using folders, you can quickly hide large amounts of material from student view. You can also make all the content in the folder hidden by:
+                <ol>
+                    <li>Set the folder availability to hidden and save changes</li>
+                    <li>Set the folder availability back to visible but choose not to "Make folder contents visible"</li>
+                    <li>The individual items can then be published as needed.</li>
+                </ol>
+            </div>
     	</ul>
 
     </sections>
@@ -122,7 +136,7 @@
             </ul>
             <li>Alerts to disable:</li>
             <ul>
-                <li>Submissions: Unless you want to be emailed everytime a student submits their work, this should be disabled. A better summary of submissions are on your homepage under recent activity.</li>
+                <li>Submissions: Unless you want to be emailed every time a student submits their work, this should be disabled. A better summary of submissions are on your homepage under recent activity.</li>
             </ul>
         </ul>
     	<h4>Groups (curricular teams)</h4>
@@ -130,8 +144,9 @@
         <p>Most items can be activated depending on how your team uses it, some important ones are:</p>
             <li>Alerts to activate:</li>
             <ul>
+                <li>Group update posted and comments on updates: You can then use this as a living discussion in your team (as long as all members are made admin).</li>
                 <li>
-                When resources are added: You probably want to be informed when a peer adds a something like a quiz or an assignment. With this turned on there isn't any need for them to post an update or send an email.</li>
+                Group Content Created: You probably want to be informed when a peer adds a something like a quiz or an assignment. With this turned on there isn't any need for them to post an update or send an email.</li>
             </ul>
         </ul>
         <h4>Groups (school wide)</h4>
@@ -139,7 +154,7 @@
             <li>Alerts to activate:</li>
             <ul>
                 <li>
-                For new updates: You will want to receive an email whenever administration posts an update.</li>
+                Group update posts: You will want to receive an email whenever administration posts an update.</li>
             </ul>
         </ul>
     </section>
@@ -147,7 +162,9 @@
     
     <section id="messaging">
         <h2>5. Messaging Parents and Student</h2>
-        <p>To quickly message groups of students or parents, Schoology is the best fastest option. When they recieve an email through Schoology they can reply directly to the email to reply.</p>
+        <p>To quickly message groups of students or parents, Schoology is the best fastest option. When they receive an email through Schoology they can reply directly to the email to reply.</p>
+                <br/>
+        <br/>
     </div>
 
     <script type="text/javascript">
@@ -166,10 +183,6 @@
         window.location.href = window.location+"#"+anchor;
     }
 	</script>
-
-    <footer>
-        <--- Back to index ------ 2. Collecting student work --->
-    </footer>
   </body>
 
 </html>
